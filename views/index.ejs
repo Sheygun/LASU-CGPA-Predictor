@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Collapsible sidebar using Bootstrap 4</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="/stylesheets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/stylesheets/css/bootstrap.css">
+    <link rel="stylesheet" href="/stylesheets/css/mdb.css">
+    <link rel="stylesheet" href="/stylesheets/css/mdb.min.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="stylesheet" href="/stylesheets/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+    <script src="/stylesheets/js/jquery-1.11.1.min.js"></script>
+</head>
+
+<body>
+
+        <div class="wrapper">
+            <!-- Sidebar  -->
+            <nav id="sidebar">
+                <div id="dismiss">
+                    <i class="fa fa-arrow-left"></i>
+                </div>
+
+                <div class="sidebar-header">
+                    <h3 class="font-weight-bold h5">Samdos Express</h3>
+                </div>
+
+
+
+            </nav>
+
+            <!-- Page Content  -->
+            <div id="content">
+                <nav class="navbar navbar-expand-lg navbar-light white scrolling-navbar">
+                    <div class="mx-auto" >
+                      <button type="button" id="sidebarCollapse" class="btn btn-red ">
+                            <i class="fa fa-2x fa-bars"></i>
+                            <!-- <span class="h4 font-weight-bold"> Samdos</span> -->
+                        </button>
+                    </div>
+                </nav>
+
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 red mx-auto" style="height: 400px;">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="overlay"></div>
+
+    </body>
+
+<script src="/stylesheets/js/bootstrap.min.js"></script>
+<script src="/stylesheets/js/popper.min.js"></script>
+<script src="/stylesheets/js/jquery-3.3.1.min.js"></script>
+<script src="/stylesheets/js/mdb.js"></script>
+<script src="/stylesheets/js/mdb.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+<script type="text/javascript">
+  $(document).ready(function () {
+    //   $("#sidebar").mCustomScrollbar({
+    //       theme: "minimal"
+    //   });
+
+      $('#dismiss, .overlay').on('click', function () {
+          $('#sidebar').removeClass('active');
+          $('.overlay').removeClass('active');
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+          $('#sidebar').addClass('active');
+          $('.overlay').addClass('active');
+          $('.collapse.in').toggleClass('in');
+          $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+  });
+</script>
+</html>
