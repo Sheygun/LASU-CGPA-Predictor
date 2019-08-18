@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Collapsible sidebar using Bootstrap 4</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="/stylesheets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="stylesheet" href="/stylesheets/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+</head>
+
+
+<body>
+
+        <div class="wrapper">
+                <div class="wrapper">
+                        <!-- Sidebar  -->
+                        <nav id="sidebar">
+                            <div id="dismiss">
+                                <i class="fas fa-arrow-left"></i>
+                            </div>
+
+                            <div class="sidebar-header">
+                                <h3>Bootstrap Sidebar</h3>
+                            </div>
+
+                            <ul class="list-unstyled components">
+                                <p>Dummy Heading</p>
+                                <li class="active">
+                                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Home</a>
+                                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                                        <li>
+                                            <a href="#">Home 1</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Home 2</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Home 3</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">About</a>
+                                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">Pages</a>
+                                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                                        <li>
+                                            <a href="#">Page 1</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Page 2</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Page 3</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Portfolio</a>
+                                </li>
+                                <li>
+                                    <a href="#">Contact</a>
+                                </li>
+                            </ul>
+
+                            <ul class="list-unstyled CTAs">
+                                <li>
+                                    <a href="https://bootstrapious.com/tutorial/files/sidebar.zip" class="download">Download source</a>
+                                </li>
+                                <li>
+                                    <a href="https://bootstrapious.com/p/bootstrap-sidebar" class="article">Back to article</a>
+                                </li>
+                            </ul>
+                        </nav>
+
+                        <!-- Page Content  -->
+                        <div id="content">
+                            <nav class="navbar navbar-expand-lg navbar-light white scrolling-navbar">
+                                <div class="container-fluid">
+                                  <a class="navbar-brand waves-effect" href="https://mdbootstrap.com/docs/jquery/" target="_blank">
+                                    <strong class="blue-text">MDB</strong>
+                                  </a>
+                                  <button type="button" id="sidebarCollapse" class="btn btn-info">
+                                        <i class="fas fa-align-left"></i>
+                                        <span>Samdos Sidebar</span>
+                                    </button>
+
+                                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                    <ul class="navbar-nav mr-auto"></ul>
+                                    <ul class="navbar-nav nav-flex-icons">
+                                      <li class="nav-item">
+                                        <a href="https://www.facebook.com/mdbootstrap" class="nav-link waves-effect" target="_blank">
+                                          <i class="fab fa-facebook-f"></i>
+                                        </a>
+                                      </li>
+                                      <li class="nav-item">
+                                        <a href="https://twitter.com/MDBootstrap" class="nav-link waves-effect" target="_blank">
+                                          <i class="fab fa-twitter"></i>
+                                        </a>
+                                      </li>
+                                      <li class="nav-item">
+                                        <a href="https://github.com/mdbootstrap/bootstrap-material-design" class="nav-link border border-light rounded waves-effect"
+                                          target="_blank">
+                                          <i class="fab fa-github mr-2"></i>MDB GitHub
+                                        </a>
+                                      </li>
+                                    </ul>
+                                  </div>
+
+                                </div>
+                              </nav>
+
+
+                            <h2>Collapsible Sidebar Using Bootstrap 4</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                            <div class="line"></div>
+
+                            <h2>Lorem Ipsum Dolor</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                            <div class="line"></div>
+
+                            <h2>Lorem Ipsum Dolor</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                            <div class="line"></div>
+
+                            <h3>Lorem Ipsum Dolor</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div>
+                    </div>
+
+                    <div class="overlay"></div>
+
+                </body>
+
+<script src="/stylesheets/js/bootstrap.min.js"></script>
+<script src="/stylesheets/js/popper.min.js"></script>
+<script src="/stylesheets/js/jquery-3.3.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#sidebar").mCustomScrollbar({
+                theme: "minimal"
+            });
+
+            $('#dismiss, .overlay').on('click', function () {
+                $('#sidebar').removeClass('active');
+                $('.overlay').removeClass('active');
+            });
+
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').addClass('active');
+                $('.overlay').addClass('active');
+                $('.collapse.in').toggleClass('in');
+                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+            });
+        });
+      </script>
+
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+    DEMO STYLE
+*/
+
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fafafa;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: #999;
+}
+
+a,
+a:hover,
+a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.navbar {
+    padding: 15px 10px;
+    background: #fff;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 40px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-btn {
+    box-shadow: none;
+    outline: none !important;
+    border: none;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px dashed #ddd;
+    margin: 40px 0;
+}
+
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+#sidebar {
+  width: 360px;
+  position: fixed;
+  top: 0;
+  left: -360px;
+  height: 100vh;
+  z-index: 999;
+  background: #7386D5;
+  color: #fff;
+  transition: all 0.3s;
+  overflow-y: scroll;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+#sidebar.active {
+  left: 0;
+}
+
+#dismiss {
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  background: #7386D5;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+#dismiss:hover {
+  background: #fff;
+  color: #7386D5;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 998;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.overlay.active {
+  display: block;
+  opacity: 1;
+}
+
+#sidebar .sidebar-header {
+  padding: 20px;
+  background: #6d7fcc;
+}
+
+#sidebar ul.components {
+  padding: 20px 0;
+  border-bottom: 1px solid #47748b;
+}
+
+#sidebar ul p {
+  color: #fff;
+  padding: 10px;
+}
+
+#sidebar ul li a {
+  padding: 10px;
+  font-size: 1.1em;
+  display: block;
+}
+
+#sidebar ul li a:hover {
+  color: #7386D5;
+  background: #fff;
+}
+
+#sidebar ul li.active>a,
+a[aria-expanded="true"] {
+  color: #fff;
+  background: #6d7fcc;
+}
+
+a[data-toggle="collapse"] {
+  position: relative;
+}
+
+.dropdown-toggle::after {
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+
+ul ul a {
+  font-size: 0.9em !important;
+  padding-left: 30px !important;
+  background: #6d7fcc;
+}
+
+ul.CTAs {
+  padding: 20px;
+}
+
+ul.CTAs a {
+  text-align: center;
+  font-size: 0.9em !important;
+  display: block;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+a.download {
+  background: #fff;
+  color: #7386D5;
+}
+
+a.article,
+a.article:hover {
+  background: #6d7fcc !important;
+  color: #fff !important;
+}
+
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+
+#content {
+    width: 100%;
+    padding: 20px;
+    min-height: 100vh;
+    transition: all 0.3s;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+function calculated(){
+    let GP1 = document.getElementById('GP1').value, courseUnit1 = document.getElementById("courseUnit1").value, creditPoint1 = document.getElementById('creditPoint1');
+        creditPoint1 = GP1 * courseUnit1; document.getElementById('creditPoint1').innerHTML = creditPoint1;
+    let GP2 = document.getElementById('GP2').value, courseUnit2 = document.getElementById("courseUnit2").value, creditPoint2 = document.getElementById('creditPoint2');
+        creditPoint2 = GP2 * courseUnit2; document.getElementById('creditPoint2').innerHTML = creditPoint2;
+    let GP3 = document.getElementById('GP3').value, courseUnit3 = document.getElementById("courseUnit3").value, creditPoint3 = document.getElementById('creditPoint3');
+        creditPoint3 = GP3 * courseUnit3; document.getElementById('creditPoint3').innerHTML = creditPoint3;
+    let GP4 = document.getElementById('GP4').value, courseUnit4 = document.getElementById("courseUnit4").value, creditPoint4 = document.getElementById('creditPoint4');
+        creditPoint4 = GP4 * courseUnit4; document.getElementById('creditPoint4').innerHTML = creditPoint4;
+    let GP5 = document.getElementById('GP5').value, courseUnit5 = document.getElementById("courseUnit5").value, creditPoint5 = document.getElementById('creditPoint5');
+        creditPoint5 = GP5 * courseUnit5; document.getElementById('creditPoint5').innerHTML = creditPoint5;
+    let GP6 = document.getElementById('GP6').value, courseUnit6 = document.getElementById("courseUnit6").value, creditPoint6 = document.getElementById('creditPoint6');
+        creditPoint6 = GP6 * courseUnit6; document.getElementById('creditPoint6').innerHTML = creditPoint6;
+
+        let GP7 = 0, courseUnit7 = 0;
+        let GP8 = 0, courseUnit8 = 0;
+        let GP9 = 0, courseUnit9 = 0;
+        let GP10 = 0, courseUnit10 = 0;
+        let GP11 = 0, courseUnit11 = 0;
+        let GP12 = 0, courseUnit12 = 0;
+
+        // let creditPoint7 = GP7 * courseUnit7;
+        // let creditPoint8 = GP8 * courseUnit8;
+        // let creditPoint9 = GP9 * courseUnit9;
+        // let creditPoint10 = GP10 * courseUnit10;
+        // let creditPoint11 = GP11 * courseUnit11;
+        // let creditPoint12 = GP12 * courseUnit12;
+
+GP7 = document.getElementById('GP7').value, courseUnit7 = document.getElementById("courseUnit7").value, creditPoint7 = document.getElementById('creditPoint7');
+        creditPoint7 = GP7 * courseUnit7; document.getElementById('creditPoint7').innerHTML = creditPoint7;
+
+    let totalNumberOfUnit = parseInt(courseUnit1) + parseInt(courseUnit2) + parseInt(courseUnit3) + parseInt(courseUnit4) + parseInt(courseUnit5)+ parseInt(courseUnit6) + parseInt(courseUnit7) + parseInt(courseUnit8) + parseInt(courseUnit9) + parseInt(courseUnit10) + parseInt(courseUnit11) + parseInt(courseUnit12),
+     tnu = document.getElementById('tnu'); tnu.innerHTML = totalNumberOfUnit;
+    let totalCreditPoint = parseInt(creditPoint1) + parseInt(creditPoint2) + parseInt(creditPoint3) + parseInt(creditPoint4) + parseInt(creditPoint5)+ parseInt(creditPoint6),
+     tcp = document.getElementById('tcp'); tcp.innerHTML = totalCreditPoint;
+    let gp = totalCreditPoint/totalNumberOfUnit;
+    let approximateGpTo2DecimalFigure = gp.toFixed(2);
+    document.getElementById('gp').innerHTML = approximateGpTo2DecimalFigure;
+    document.getElementById('calculate').style.display = "none";
+    document.getElementById('cgpa').innerHTML = approximateGpTo2DecimalFigure;
+}
+
+
+
+
+let GP1 = document.getElementById('GP1').value, courseUnit1 = document.getElementById("courseUnit1").value, creditPoint1 = document.getElementById('creditPoint1');
+        creditPoint1 = GP1 * courseUnit1; document.getElementById('creditPoint1').innerHTML = creditPoint1;
+    let GP2 = document.getElementById('GP2').value, courseUnit2 = document.getElementById("courseUnit2").value, creditPoint2 = document.getElementById('creditPoint2');
+        creditPoint2 = GP2 * courseUnit2; document.getElementById('creditPoint2').innerHTML = creditPoint2;
+    let GP3 = document.getElementById('GP3').value, courseUnit3 = document.getElementById("courseUnit3").value, creditPoint3 = document.getElementById('creditPoint3');
+        creditPoint3 = GP3 * courseUnit3; document.getElementById('creditPoint3').innerHTML = creditPoint3;
+    let GP4 = document.getElementById('GP4').value, courseUnit4 = document.getElementById("courseUnit4").value, creditPoint4 = document.getElementById('creditPoint4');
+        creditPoint4 = GP4 * courseUnit4; document.getElementById('creditPoint4').innerHTML = creditPoint4;
+    let GP5 = document.getElementById('GP5').value, courseUnit5 = document.getElementById("courseUnit5").value, creditPoint5 = document.getElementById('creditPoint5');
+        creditPoint5 = GP5 * courseUnit5; document.getElementById('creditPoint5').innerHTML = creditPoint5;
+    let GP6 = document.getElementById('GP6').value, courseUnit6 = document.getElementById("courseUnit6").value, creditPoint6 = document.getElementById('creditPoint6');
+        creditPoint6 = GP6 * courseUnit6; document.getElementById('creditPoint6').innerHTML = creditPoint6;
+
+
+    let totalNumberOfUnit = parseInt(courseUnit1) + parseInt(courseUnit2) + parseInt(courseUnit3) + parseInt(courseUnit4) + parseInt(courseUnit5)+ parseInt(courseUnit6),
+     tnu = document.getElementById('tnu'); tnu.innerHTML = totalNumberOfUnit;
+    let totalCreditPoint = parseInt(creditPoint1) + parseInt(creditPoint2) + parseInt(creditPoint3) + parseInt(creditPoint4) + parseInt(creditPoint5)+ parseInt(creditPoint6),
+     tcp = document.getElementById('tcp'); tcp.innerHTML = totalCreditPoint;
+    let gp = totalCreditPoint/totalNumberOfUnit;
+    let approximateGpTo2DecimalFigure = gp.toFixed(2);
+    document.getElementById('gp').innerHTML = approximateGpTo2DecimalFigure;
+    document.getElementById('calculate').style.display = "none";
+    document.getElementById('cgpa').innerHTML = approximateGpTo2DecimalFigure;
