@@ -313,7 +313,7 @@ function addCourse(){
     centers5.appendChild(h4)
 
 
-    }else if(rowCount > "12"){
+    }else if(rowCount >= "13"){
         // document.getElementById('addbutton').innerHTML = "Completed"
         document.getElementById('diableAddCourse').style.display = "none";
     }
